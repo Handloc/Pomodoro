@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="categories">
+        <button class="category-button active">Pomodoro</button>
+        <button class="category-button">Short break</button>
+        <button class="category-button">Long break</button>
+      </div>
+      <div class="time-container">25:00</div>
+      <button class="start-stop-button">START</button>
+    </div>
+    <button class="settings-button">
+      <img src="settings-icon.svg" />
+      <a>Settings</a>
+    </button>
+    <div class="settings-container inactive">
+      <div class="time-inputs">
+        <label>Pomodoro length</label>
+        <input
+          id="pomodoro-length"
+          class="time-input"
+          type="number"
+          value="25"
+        />
+        <label>Short break length</label>
+        <input
+          id="short-break-length"
+          class="time-input"
+          type="number"
+          value="5"
+        />
+        <label>Long break length</label>
+        <input
+          id="long-break-length"
+          class="time-input"
+          type="number"
+          value="15"
+        />
+        <label>Long break interval</label>
+        <input
+          id="long-break-interval"
+          class="time-input"
+          type="number"
+          value="4"
+        />
+      </div>
+      <button class="accept-button">Accept</button>
+    </div>
+  </body>
+</html>

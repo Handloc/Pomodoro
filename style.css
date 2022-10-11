@@ -1,0 +1,148 @@
+* {
+  font-family: Nunito;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(#ff8a00, #d80e58);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  height: 70vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+
+.start-stop-button {
+  font-weight: bold;
+  position: absolute;
+  bottom: 5vw;
+  width: 35vw;
+  height: 15vw;
+  font-size: 5vw;
+  border-radius: 15vw;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.time-container {
+  font-size: 25vw;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+#categories {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5vw;
+}
+
+.category-button {
+  width: 25vw;
+  height: 8vw;
+  margin: 0 5px;
+  border-radius: 4vw;
+  font-size: 4vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.category-button:hover,
+.start-stop-button:hover,
+.settings-button:hover {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.settings-button,
+.accept-button {
+  font-weight: bold;
+  top: 5vw;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 35vw;
+  height: 12vw;
+  border-radius: 10vw;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+  margin-right: 1vw;
+}
+
+.settings-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  height: 90vw;
+  top: 30vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+
+.accept-button {
+  position: absolute;
+  top: 75vw;
+}
+
+.settings-button-active {
+  color: white;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.time-inputs {
+  /* font-weight: bold; */
+  top: 5vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-inputs label {
+  font-size: 4vw;
+}
+
+.time-input {
+  text-align: center;
+  font-size: 6vw;
+  height: 7vw;
+  width: 35vw;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 3vw;
+  border-radius: 1.5vw;
+}
+
+.inactive {
+  display: none;
+}
