@@ -5,6 +5,7 @@
 body {
   margin: 0;
   height: 100vh;
+  transition: background 1.5s;
   background: radial-gradient(#ff8a00, #d80e58);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,7 +64,8 @@ body {
 
 .category-button:hover,
 .start-stop-button:hover,
-.settings-button:hover {
+.settings-button:hover,
+.accept-button:hover {
   cursor: pointer;
 }
 
@@ -145,4 +147,68 @@ img {
 
 .inactive {
   display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-container {
+    width: 510px;
+    height: 420px;
+  }
+
+  .time-container {
+    font-size: 150px;
+  }
+
+  .start-stop-button {
+    bottom: 30px;
+    width: 210px;
+    height: 90px;
+    font-size: 30px;
+    border-radius: 90px;
+  }
+
+  .category-button {
+    width: 150px;
+    height: 48px;
+    border-radius: 24px;
+    font-size: 24px;
+  }
+
+  .settings-button,
+  .accept-button {
+    top: 30px;
+    font-size: 24px;
+    width: 210px;
+    height: 72px;
+    border-radius: 60px;
+  }
+
+  #categories {
+    top: 30px;
+  }
+
+  .settings-container {
+    width: 510px;
+    height: 540px;
+    top: 180px;
+  }
+  .time-inputs label {
+    font-size: 24px;
+  }
+
+  .time-input {
+    font-size: 36px;
+    height: 42px;
+    width: 210px;
+    margin-bottom: 18px;
+    border-radius: 9px;
+  }
+
+  .accept-button {
+    top: 450px;
+  }
+
+  .time-inputs {
+    top: 30px;
+  }
 }
